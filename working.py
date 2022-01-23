@@ -17,7 +17,7 @@ inventory = {
 
 @app.get("/")
 def get_home():
-    return {"message": "Hello World"}
+    return {"message": "Hello World!"}
 
 @app.get("/get-item/{item_id}")
 def get_item(item_id : int = Path(None,description="The ID of the item you like to view.",lt=2)):
